@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    paths-ignore: ['**.md', 'LICENSE']
+  schedule:
+    - cron: '0 4 1 * *' # Run at 4:00 on the first day of the month
+
+jobs:
+  test:
+    name: Build packages
+    runs-on: macos-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install formula
+        run: brew install --formula -s Formula/cspark.rb
+
+      - name: Check basic commands
+        run: |
+          cspark --version
+          cspark --help
