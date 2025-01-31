@@ -7,10 +7,10 @@ on:
     - cron: '0 4 1 * *' # Run at 4:00 on the first day of the month
 
 jobs:
-  test:
-    name: Build packages
+  build:
     runs-on: macos-latest
     timeout-minutes: 5
+
     steps:
       - uses: actions/checkout@v4
 
