@@ -20,8 +20,7 @@ brew install cspark
 cspark --help
 ```
 
-Using [pipx]:
-(`python >= 3.8` required):
+Using [pipx] (`Python >= 3.8` required):
 
 ```bash
 pipx install 'cspark[cli]'

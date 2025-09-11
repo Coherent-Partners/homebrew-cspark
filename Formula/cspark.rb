@@ -3,8 +3,8 @@ class Cspark < Formula
 
   desc "Interact with Coherent Spark APIs from the command line"
   homepage "https://github.com/Coherent-Partners/spark-python-sdk/tree/main/docs/cli"
-  url "https://files.pythonhosted.org/packages/57/87/58977daf017fb4d1990abd1620a72fbd78b0627a903f689ce317dee288c7/cspark-0.1.12.tar.gz"
-  sha256 "d99cfdac9b75ed82050afc97e96456b2cbe9347188bf3ca52cab45f7258339ff"
+  url "https://files.pythonhosted.org/packages/54/85/f8e0141ae21423d3db70495f1f6b195afe71c83c0c37bcc949650a81174d/cspark-0.2.2.tar.gz"
+  sha256 "1aec07fb69343878132ffebcd4a7e96cb2fc15d7d9a9171fbf3a458a11c9fdbf"
   license "Apache-2.0"
 
   depends_on "python@3.11"
