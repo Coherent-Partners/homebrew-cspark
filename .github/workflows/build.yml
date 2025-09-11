@@ -17,8 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Tap the repository
+        run: brew tap Coherent-Partners/cspark
+
       - name: Install formula
-        run: brew install --formula -s Formula/cspark.rb
+        run: brew install cspark
 
       - name: Check basic commands
         run: |
