@@ -18,7 +18,9 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Tap the repository
-        run: brew tap Coherent-Partners/cspark
+        run: |
+          brew tap Coherent-Partners/cspark
+          brew trust --formula coherent-partners/cspark/cspark
 
       - name: Install formula
         run: brew install cspark
